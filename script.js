@@ -7,11 +7,12 @@ const payAmount = Number(urlParams.get('pay'));
 // Auto generate QR saat page load
 document.addEventListener('DOMContentLoaded', function() {
     if (!payAmount || payAmount < 1) {
-        window.location.href = 'index.html';
+        window.location.href = '404.html';
         return;
     }
 
-    const qrisUtama = '00020101021126610014COM.GO-JEK.WWW01189360091437809159890210G7809159890303UMI51440014ID.CO.QRIS.WWW0215ID10243444435010303UMI5204581653033605802ID5925Aether Store, Pagerageung6011TASIKMALAYA610A0163045AF85406100.00';
+  const qrisUtama = '00020101021126610014COM.GO-JEK.WWW01189360091437809159890210G7809159890303UMI51440014ID.CO.QRIS.WWW0215ID10243444435010303UMI5204581653033605802ID5925Aether Store, Pagerageung6011TASIKMALAYA61054615862070703A0163045AF8';
+
 
     localStorage.setItem('QRIS_Utama', qrisUtama);
 
