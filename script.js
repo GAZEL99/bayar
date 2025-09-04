@@ -7,7 +7,7 @@ const payAmount = Number(urlParams.get('pay'));
 // Auto generate QR saat page load
 document.addEventListener('DOMContentLoaded', function() {
     if (!payAmount || payAmount < 1) {
-        window.location.href = '404.html';
+        window.location.href = 'index.html';
         return;
     }
 
